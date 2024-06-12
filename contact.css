@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+}
+
+.main {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 160px;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 41px;
+}
+
+.header-top {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 10% 10% 15% 1fr 15% 10% 10%;
+}
+
+.header-top-logo {
+    text-align: center;
+    grid-column: 2;
+}
+
+.header-top-banner {
+    text-align: center;
+    grid-column: 4;
+}
+
+.header-top-contact {
+    grid-column: 6;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.header-top-contact-right p {
+    font-size: 25px;
+    color: rgb(255, 186, 1);
+}
+
+.header-bottom {
+    background-color: #6f4ca0;
+}
+
+.header-bottom ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.header-bottom a {
+    color: white;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 8.5px 24px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.header-bottom li {
+    align-items: center;
+    justify-items: center;
+    float: left;
+}
+
+.header-bottom>ul>li:hover>a {
+    background-color: #eee4b3;
+    color: #6f4ca0;
+}
+
+.submenu .submenu-child {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    background-color: #6f4ca0;
+    min-width: 150px;
+}
+
+.submenu:hover .submenu-child {
+    display: block;
+}
+
+.header-bottom>ul>li>div>a:hover {
+    background-color: #eee4b3;
+    color: #6f4ca0;
+}
+
+.body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+}
+
+.body-container {
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.body-container-top {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.body-container-bottom {
+    height: 500px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.body-container-bottom-top {
+    text-transform: uppercase;
+    color: #6f4ca0;
+    padding: 6px 15px;
+    border-left: 5px solid #6f4ca0;
+    background-color: #f2f2f2;
+}
+
+.body-container-bottom-bottom {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+.body-container-bottom-bottom-left {
+    display: grid;
+    grid-template-rows: 65% 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.body-container-bottom-bottom-left-top {
+    padding: 20px 30px 0px 20px;
+}
+
+.body-container-bottom-bottom-left-top input {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #6f4ca0;
+    padding: 3px 6px;
+    outline: none;
+}
+
+.body-container-bottom-bottom-left-top input:hover {
+    border: 2px solid black;
+}
+
+.body-container-bottom-bottom-left-top input:focus {
+    border: 3px solid black;
+}
+
+.body-container-bottom-bottom-left-top input::placeholder {
+    color: #6f4ca0;
+}
+
+.body-container-bottom-bottom-left-top textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 70px;
+    max-height: 70px;
+    color: #6f4ca0;
+    padding: 3px 6px;
+    outline: none;
+}
+
+.body-container-bottom-bottom-left-top textarea:hover {
+    border: 2px solid black;
+}
+
+.body-container-bottom-bottom-left-top textarea:focus {
+    border: 3px solid black;
+}
+
+.body-container-bottom-bottom-left-top textarea::placeholder {
+    color: #6f4ca0;
+}
+
+.body-container-bottom-bottom-left-top button {
+    width: 100%;
+    border: none;
+    background-color: #6f4ca0;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.body-container-bottom-bottom-left-top button:hover {
+    background-color: hwb(265 24% 49%);
+}
+
+.body-container-bottom-bottom-left-bottom {
+    padding: 20px 30px 0px 20px;
+}
+
+.body-container-bottom-bottom-right {
+    margin-top: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(204, 204, 204);
+    display: grid;
+    grid-template-rows: 1fr 65px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 100%;
+    background-color: #6f4ca0;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    color: rgb(190, 190, 190);
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 40% 20% 10%;
+    margin-top: 20px;
+    column-gap: 30px;
+}
+
+.footer-top h4 {
+    color: #6f4ca0;
+}
+
+.footer-top-gioithieu {
+    grid-column: 2;
+}
+
+.footer-top a {
+    color: black;
+    text-decoration: none;
+}
